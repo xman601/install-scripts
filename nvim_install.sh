@@ -6,7 +6,6 @@ elif command -v dnf >/dev/null 2>&1; then pkgmgr="dnf"
 elif command -v yum >/dev/null 2>&1; then pkgmgr="yum"
 elif command -v zypper >/dev/null 2>&1; then pkgmgr="zypper"
 elif command -v apk >/dev/null 2>&1; then pkgmgr="apk"
-else pkgmgr="unknown"
 fi
 
 
@@ -29,5 +28,7 @@ git clone git@github.com:xman601/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 
 stow nvim
+
+cd
 
 # End of Neovim Setup
